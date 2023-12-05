@@ -1,6 +1,6 @@
 /* general style, including font and color */
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 body {
@@ -17,8 +17,13 @@ h2 {
     font-family: 'Chistoso', serif;
 }
 
+h2 {
+    padding-bottom: 5%;
+    ;
+}
+
 .display-1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 .display-2 {
@@ -26,18 +31,26 @@ h2 {
     text-align: center;
 }
 
-.display-3,
-.display-4 {
+.display-3 {
     font-size: 2rem;
 }
 
-.display-5 {
+.display-4 {
     font-size: 1.5rem;
+    font-weight: bold;
 }
+
+.display-5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* customize the bootstrap*/
 
 :root {
     --bs-primary: #DA76BC;
-    --bs-secondary: #FDFF84;
+    --bs-secondary: #F9F8DC;
     --bs-primary-rgb: 218, 118, 188;
     --bs-secondary-rgb: 253, 255, 132;
     --bs-primary-text-emphasis: #773D66;
@@ -67,6 +80,10 @@ h2 {
     --bs-btn-disabled-border-color: var(--bs-primary);
 }
 
+.btn-outline-primary {
+    --bs-btn-bg: none;
+}
+
 .btn-outline-secondary {
     --bs-btn-color: var(--bs-secondary);
     --bs-btn-border-color: var(--bs-secondary);
@@ -79,6 +96,12 @@ h2 {
     --bs-btn-disabled-border-color: var(--bs-secondary);
 }
 
+.navbar-container {
+    padding: 0 3%;
+}
+
+
+/* style the gradient button */
 #main-button {
     background: rgb(218, 118, 188);
     background: linear-gradient(120deg, rgba(218, 118, 188, 1) 0%, rgba(253, 255, 132, 1) 100%);
@@ -89,6 +112,18 @@ h2 {
     background: #DA76BC;
 }
 
+/* custimize the nav bar */
+.navbar[data-bs-theme="dark"] {
+    --bs-navbar-hover-color: var(--bs-primary);
+    --bs-navbar-active-color: var(--bs-primary);
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: var(--bs-primary);
+}
+
+#logo {
+    fill: #DA76BC;
+}
+
 
 /* style the links */
 
@@ -96,6 +131,11 @@ main a {
     color: rgba(var(--bs-primary-rgb), var(--bs-link-opacity, 1));
     text-decoration: underline;
     font-weight: bold;
+}
+
+main a:hover {
+    color: var(--bs-secondary-border-subtle);
+    text-decoration: none;
 }
 
 img {
@@ -120,7 +160,7 @@ img {
 .banner-content {
     width: 30%;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 10%;
 }
 
@@ -138,18 +178,58 @@ img {
 
 /* style the footer */
 footer {
-    background: rgb(218, 118, 188);
-    background: linear-gradient(120deg, rgba(218, 118, 188, 1) 0%, rgba(253, 255, 132, 1) 100%);
+    background: rgb(229, 140, 214);
+    background: linear-gradient(120deg, rgba(229, 140, 214, 1) 20%, rgba(255, 222, 152, 1) 90%);
 }
 
-footer a {
-    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 0.8));
+footer a,
+h5,
+p {
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 0.9));
     text-decoration: none;
 }
 
 footer ul {
     list-style: none;
 }
+
+footer .line {
+    width: 100%;
+    height: 0.8px;
+    background-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 0.9));
+}
+
+footer a:hover {
+    color: #FFDE98;
+    transition: ease-in-out 0.3s;
+}
+
+footer .social-media,
+.links {
+    padding-left: 10%;
+}
+
+/* style the main section of home  */
+/* style the skill section using flex */
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills,
+.works {
+    padding: 5% 8%;
+}
+
+/* style the work section */
+.work-card {
+    padding: 1rem;
+    border-radius: 15px;
+}
+
 
 
 /* about page starts here */
@@ -169,7 +249,9 @@ footer ul {
 
 .about-content img {
     width: 60%;
+    height: auto;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 .about-content p {
@@ -177,7 +259,7 @@ footer ul {
 }
 
 /* style the fun facts section */
-.funfacts {
+.fun {
     padding: 5% 10%;
 }
 
@@ -244,4 +326,32 @@ footer ul {
 
 #exampleFormControlTextarea1 {
     height: 10rem;
+}
+
+
+/* Large screens (992px and larger) */
+@media (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Medium screens (768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size: 15px;
+    }
+
+}
+
+/* Small screens (767.98px and smaller) */
+@media (max-width: 767.98px) {
+    html {
+        font-size: 14px;
+    }
+
+    .banner-content {
+        width: 40%;
+    }
+
 }
