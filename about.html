@@ -62,9 +62,13 @@
 
             <div class="about-content row">
                 <div class="col-12 col-md-6 col-lg-5 pt-4 d-flex justify-content-center">
-                    <img srcset="./assets/images/piano-400_x_400.jpg 400w, ./assets/images/photo-800_x_1202.jpg 800w"
-                        sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
-                        src="./assets/images/photo-800_x_1202.jpg" class="img-fluid" alt="bioimage">
+                    <picture>
+                        <source srcset="./assets/images/photo-400_x_600.jpg" media="(max-width: 720px)"
+                            sizes="(max-width: 720px) 100vw">
+                        <source srcset="./assets/images/photo-800_x_1202.jpg" media="(min-width: 721px)"
+                            sizes="(min-width: 721px) 100vw">
+                        <img src="./assets/images/photo-800_x_1202.jpg" alt="bioimage" class="img-fluid" id="bio-image">
+                    </picture>
                 </div>
                 <div class="col-12 col-md-6 col-lg-7 pt-4">
                     <p>Hey there, I'm Yali Liu, a passionate UI/UX designer
@@ -84,39 +88,53 @@
                 </div>
             </div>
 
+            <!-- fun facts section show my hobbies -->
             <div class="fun">
                 <h2 class="display-2">A little more about me</h2>
                 <div class="funfacts row g-3">
                     <div class="funfact col-6 col-md-4">
                         <div class="fact-image">
                             <div class="overlay"></div>
-                            <img srcset="./assets/images/cat-400_x_400.jpg 400w, ./assets/images/cat-800_x_800.jpg 800w"
-                                sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
-                                src="./assets/images/cat-800_x_800.jpg" alt="catperson">
+                            <picture>
+                                <source srcset="./assets/images/cat-400_x_400.jpg" media="(max-width: 720px)"
+                                    sizes="(max-width: 720px) 100vw">
+                                <source srcset="./assets/images/cat-800_x_800.jpg" media="(min-width: 721px)"
+                                    sizes="(min-width: 721px) 100vw">
+                                <img src="./assets/images/cat-800_x_800.jpg" alt="catperson">
+                            </picture>
                         </div>
                         <h5 class="display-5 text-center text-white">CAT PERSON</h5>
                     </div>
                     <div class="funfact col-6 col-md-4">
                         <div class="fact-image">
                             <div class="overlay"></div>
-                            <img srcset="./assets/images/piano-400_x_400.jpg 400w, ./assets/images/piano-800_x_800.jpg 800w"
-                                sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
-                                src="./assets/images/piano-800_x_800.jpg" alt="piano">
+                            <picture>
+                                <source srcset="./assets/images/piano-400_x_400.jpg" media="(max-width: 720px)"
+                                    sizes="(max-width: 720px) 100vw">
+                                <source srcset="./assets/images/piano-800_x_800.jpg" media="(min-width: 721px)"
+                                    sizes="(min-width: 721px) 100vw">
+                                <img src="./assets/images/piano-800_x_800.jpg" alt="piano">
+                            </picture>
                         </div>
                         <h5 class="display-5 text-center text-white">MUSICIAN</h5>
                     </div>
                     <div class="funfact col-6 col-md-4">
                         <div class="fact-image">
                             <div class="overlay"></div>
-                            <img srcset="./assets/images/photolover-400_x_400.jpg 400w, ./assets/images/photolover-800_x_800.jpg 800w"
-                                sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
-                                src="./assets/images/photolover-800_x_800.jpg" alt="photolover">
+                            <picture>
+                                <source srcset="./assets/images/photolover-400_x_400.jpg" media="(max-width: 720px)"
+                                    sizes="(max-width: 720px) 100vw">
+                                <source srcset="./assets/images/photolover-800_x_800.jpg" media="(min-width: 721px)"
+                                    sizes="(min-width: 721px) 100vw">
+                                <img src="./assets/images/photolover-800_x_800.jpg" alt="photolover">
+                            </picture>
                         </div>
                         <h5 class="display-5 text-center text-white">PHOTOGRAPHER</h5>
                     </div>
                 </div>
             </div>
 
+            <!-- shows comments from my peers and professors -->
             <div class="reviews" itemscope itemtype="https://schema.org/Review">
                 <h2 class=" display-2">People say I am__</h2>
                 <div class="review-cards row">
@@ -171,6 +189,7 @@
 
         </main>
 
+        <!-- footer starts here -->
         <footer class="footer" role="footer" id="footer">
 
             <div class="footer-cards row p-4 pt-5">

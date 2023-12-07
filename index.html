@@ -59,9 +59,15 @@
 
         <main id="main-content"><!-- main area includes 4 sections: banner, bio, skills and works -->
             <div class="banner" role="banner" id="main-content" role="banner">
-                <img srcset="./assets/banners/about-banner-960_x_290.jpg 960w, ./assets/banners/home-banner-1500-1500_x_650.jpg 1500w"
-                    sizes="(max-width: 720px) 960px,(max-width: 1080px) 1500px"
-                    src="./assets/banners/home-banner-1500-1500_x_650.jpg" alt="home-banner-lg" id="home-banner-lg">
+                <!-- this is banner image with 2 different sizes -->
+                <picture>
+                    <source srcset="./assets/banners/home-banner-1500-960_x_416.jpg" media="(max-width: 720px)"
+                        sizes="(max-width: 720px) 100vw">
+                    <source srcset="./assets/banners/home-banner-1500-1500_x_650.jpg" media="(min-width: 721px)"
+                        sizes="(min-width: 721px) 100vw">
+                    <img src="./assets/banners/home-banner-1500-1500_x_650.jpg" alt="home-banner">
+                </picture>
+                <!-- banner text content -->
                 <div class="banner-content">
                     <h1 class="display-1 text-white">Hi,I'm Yali Liu</h1>
                     <a href="https://liu0062538dc.myportfolio.com/work"> <button role="button"
@@ -73,6 +79,7 @@
                 </div>
             </div>
 
+            <!-- A short bio section linked to about page -->
             <section class="bio p-4 bg-light">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-md-4 bi0-content" data-aos="fade-right" data-aos-duration="1000">
@@ -82,14 +89,21 @@
                         <a href="./about.html" class="hvr-float" role="button">Learn more<i
                                 class="bi bi-arrow-right-short"></i></a>
                     </div>
-                    <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="3000"><img
-                            src="./assets/images/catgirl.png" alt="bio-comic"></div>
+                    <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="3000">
+                        <!-- bio image with 2 sizes -->
+                        <picture>
+                            <source srcset="./assets/images/catgirl-600_x_474.png" media="(max-width: 720px)"
+                                sizes="(max-width: 720px) 100vw">
+                            <source srcset="./assets/images/catgirl-800_x_632.png" media="(min-width: 721px)"
+                                sizes="(min-width: 721px) 100vw">
+                            <img src=./assets/images/catgirl-800_x_632.png" alt="bio-comic">
+                        </picture>
+                    </div>
 
                 </div>
-
-
             </section>
 
+            <!-- A skills section using grid system -->
             <section class="skills bg-primary-subtle">
                 <h2 class="display-2 text-center">Skills</h2>
                 <div class="skill-cards row pb-5">
@@ -116,14 +130,21 @@
                 </div>
             </section>
 
+            <!-- A work section using grid system and schema to mark up my creative works -->
             <section class="works" itemscope itemtype="https://schema.org/CreativeWork">
                 <h2 class="display-2 text-center">My Works</h2>
                 <div class="work-cards row g-4">
                     <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="600">
-                        <img srcset="./assets/images/chillax-400.jpg 400w, ./assets/images/chillax-800.jpg 800w"
-                            sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
-                            src=" ./assets/images/chillax-800.jpg" class="card-img-top img-fluid" alt="icecreamshop">
-
+                        <!-- work card image with 2 sizes -->
+                        <picture>
+                            <source srcset="./assets/images/chillax-400.jpg" media="(max-width: 720px)"
+                                sizes="(max-width: 720px) 100vw">
+                            <source srcset="./assets/images/chillax-800.jpg" media="(min-width: 721px)"
+                                sizes="(min-width: 721px) 100vw">
+                            <img src="./assets/images/chillax-800.jpg" class="card-img-top img-fluid"
+                                alt="icecreamshop">
+                        </picture>
+                        <!-- work card text content -->
                         <div class="card-body" itemprop="exampleOfWork">
                             <h5 class="card-title display-5 pt-2" itemprop="keywords">UI/UX DESIGN</h5>
                             <h3 class="card-title display-4 pt-2">ICE CREAM WEB</h3>
@@ -141,10 +162,15 @@
 
                     <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up"
                         data-aos-duration="1000">
-                        <img srcset="./assets/images/animal-400.png 400w, ./assets/images/animal-800.png 800w"
-                            sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
-                            src=" ./assets/images/animal-800.png" class="card-img-top .img-fluid" alt="animalrescue">
-
+                        <!-- work card image with 2 sizes -->
+                        <picture>
+                            <source srcset="./assets/images/animal-400.png" media="(max-width: 720px)"
+                                sizes="(max-width: 720px) 100vw">
+                            <source srcset="./assets/images/animal-800.png" media="(min-width: 721px)"
+                                sizes="(min-width: 721px) 100vw">
+                            <img src="./assets/images/animal-800.png" class="card-img-top img-fluid" alt="animalrescue">
+                        </picture>
+                        <!-- work card text content -->
                         <div class="card-body" itemprop="exampleOfWork">
                             <h5 class="card-title display-5 pt-2" itemprop="keywords">WORDPRESS</h5>
                             <h3 class="card-title display-4 pt-2">ANIMAL RESCUE WEB</h3>
@@ -160,10 +186,16 @@
 
                     <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="1400"
                         itemprop="exampleOfWork">
-                        <img srcset="./assets/images/illustration-400.png 400w, ./assets/images/illustration-800.png 800w"
-                            sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
-                            src=" ./assets/images/illustration-800.png" class="card-img-top .img-fluid"
-                            alt="illustration">
+                        <!-- work card image with 2 sizes -->
+                        <picture>
+                            <source srcset="./assets/images/illustration-400.png" media="(max-width: 720px)"
+                                sizes="(max-width: 720px) 100vw">
+                            <source srcset="./assets/images/illustration-800.png" media="(min-width: 721px)"
+                                sizes="(min-width: 721px) 100vw">
+                            <img src="./assets/images/illustration-800.png" class="card-img-top img-fluid"
+                                alt="illustration">
+                        </picture>
+                        <!-- work card text content -->
                         <div class="card-body">
                             <h5 class="card-title display-5 pt-2" itemprop="keywords">ILLUSTRATION</h5>
                             <h3 class="card-title display-4 pt-2">APPLE AVATORS</h3>
@@ -185,6 +217,7 @@
 
         </main>
 
+        <!-- footer starts here -->
         <footer class="footer" id="footer" role="footer">
 
             <div class="footer-cards row p-4 pt-5">
