@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Animate on scroll library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- hover.css -->
+    <link rel="stylesheet" href="./css/hover-min.css">
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,174 +23,205 @@
 </head>
 
 <body>
-    <header> <!-- header section includes navigation bar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid navbar-container">
-                <a class="navbar-brand" href="index.html"><img src="./assets/icons/logo.svg" alt="main-logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+    <!-- add skip-links for the main content and footer -->
+    <div class="container-fluid p-0">
+        <div class="skip-links">
+            <a href="#main-content" class="skip-link">Skip to main content</a>
+            <a href="#footer" class="skip-link">Skip to footer</a>
+        </div>
+
+        <header> <!-- header section includes navigation bar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" role="navigation" data-bs-theme="dark">
+                <div class="container-fluid navbar-container">
+                    <a class="navbar-brand" href="index.html"><img src="./assets/icons/logo.svg" alt="main-logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active hvr-float" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-float" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-float" href="contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <main id="main-content"><!-- main area includes 4 sections: banner, bio, skills and works -->
+            <div class="banner" role="banner" id="main-content" role="banner">
+                <img srcset="./assets/banners/about-banner-960_x_290.jpg 960w, ./assets/banners/home-banner-1500-1500_x_650.jpg 1500w"
+                    sizes="(max-width: 720px) 960px,(max-width: 1080px) 1500px"
+                    src="./assets/banners/home-banner-1500-1500_x_650.jpg" alt="home-banner-lg" id="home-banner-lg">
+                <div class="banner-content">
+                    <h1 class="display-1 text-white">Hi,I'm Yali Liu</h1>
+                    <a href="https://liu0062538dc.myportfolio.com/work"> <button role="button"
+                            class="main-button btn btn-lg text-white gradient-button mt-2" id="main-button">View my
+                            works</button></a>
+                    <a href="./contact.html"> <button role="button"
+                            class="sub-button btn btn-lg btn-outline-secondary mt-2 px-4">Contact
+                            me!</button></a>
+                </div>
+            </div>
+
+            <section class="bio p-4 bg-light">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-md-4 bi0-content" data-aos="fade-right" data-aos-duration="1000">
+                        <h3 class="display-3">Hey! I'm Yali, a dedicated and creative UI/UX designer and Web developer
+                            based in Ottawa, ON.
+                        </h3>
+                        <a href="./about.html" class="hvr-float" role="button">Learn more<i
+                                class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="3000"><img
+                            src="./assets/images/catgirl.png" alt="bio-comic"></div>
+
+                </div>
+
+
+            </section>
+
+            <section class="skills bg-primary-subtle">
+                <h2 class="display-2 text-center">Skills</h2>
+                <div class="skill-cards row pb-5">
+                    <div class="skill-card col-6 col-lg-3">
+                        <img src="./assets/icons/skill1.svg" style="max-width: 50%;" alt="skill-1" data-aos="flip-left"
+                            data-aos-duration="400">
+                        <p>UI/UX Design</p>
+                    </div>
+                    <div class="skill-card col-6 col-lg-3">
+                        <img src="./assets/icons/skill2.svg" style="max-width: 50%;" alt="skill-2" data-aos="flip-left"
+                            data-aos-duration="600">
+                        <p>Brand Design</p>
+                    </div>
+                    <div class="skill-card col-6 col-lg-3">
+                        <img src="./assets/icons/skill3.svg" style="max-width: 50%;" alt="skill-3" data-aos="flip-left"
+                            data-aos-duration="800">
+                        <p>Illustration</p>
+                    </div>
+                    <div class="skill-card col-6 col-lg-3">
+                        <img src="./assets/icons/skill4.svg" style="max-width: 50%;" alt="skill-4" data-aos="flip-left"
+                            data-aos-duration="1200">
+                        <p>Web Development</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="works" itemscope itemtype="https://schema.org/CreativeWork">
+                <h2 class="display-2 text-center">My Works</h2>
+                <div class="work-cards row g-4">
+                    <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="600">
+                        <img srcset="./assets/images/chillax-400.jpg 400w, ./assets/images/chillax-800.jpg 800w"
+                            sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
+                            src=" ./assets/images/chillax-800.jpg" class="card-img-top img-fluid" alt="icecreamshop">
+
+                        <div class="card-body" itemprop="exampleOfWork">
+                            <h5 class="card-title display-5 pt-2" itemprop="keywords">UI/UX DESIGN</h5>
+                            <h3 class="card-title display-4 pt-2">ICE CREAM WEB</h3>
+                            <p class="card-text">I designed the brand
+                                identities and website for a vertual ice cream shop.Our UX/UI design project
+                                is poised to revolutionize the ice cream
+                                experience, seamlessly blending delightful flavors with an intuitive digital interface.
+                            </p>
+                            <a href="https://liu00635.github.io/mtm6201-midterm/"
+                                class="link-underline-primary hvr-float" role="button">Learn
+                                more<i class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <img srcset="./assets/images/animal-400.png 400w, ./assets/images/animal-800.png 800w"
+                            sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
+                            src=" ./assets/images/animal-800.png" class="card-img-top .img-fluid" alt="animalrescue">
+
+                        <div class="card-body" itemprop="exampleOfWork">
+                            <h5 class="card-title display-5 pt-2" itemprop="keywords">WORDPRESS</h5>
+                            <h3 class="card-title display-4 pt-2">ANIMAL RESCUE WEB</h3>
+                            <p class="card-text">This is a project I did in college.The platform was meticulously
+                                designed
+                                to provide a user-friendly interface, facilitating seamless navigation for visitors
+                                interested in adopting or supporting animals in need. </p>
+                            <a href="https://yaliliu.rf.gd/" class="link-underline-primary hvr-float"
+                                role="button">Learn more<i class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="1400"
+                        itemprop="exampleOfWork">
+                        <img srcset="./assets/images/illustration-400.png 400w, ./assets/images/illustration-800.png 800w"
+                            sizes="(max-width: 720px) 400px,(max-width: 1500px) 800px"
+                            src=" ./assets/images/illustration-800.png" class="card-img-top .img-fluid"
+                            alt="illustration">
+                        <div class="card-body">
+                            <h5 class="card-title display-5 pt-2" itemprop="keywords">ILLUSTRATION</h5>
+                            <h3 class="card-title display-4 pt-2">APPLE AVATORS</h3>
+                            <p class="card-text">In my college illustration project, I undertook the creation of a
+                                visually
+                                captivating platform that showcased a meticulous design approach. The primary goal was
+                                to
+                                offer a user-friendly interface that not only captured attention.</p>
+                            <a href="https://liu0062538dc.myportfolio.com/apple-avators"
+                                class="link-underline-primary hvr-float" role="button">Learn more<i
+                                    class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="contact-button d-flex justify-content-center">
+                <a class="btn btn-outline-primary btn-lg mb-5" role="button" href="contact.html">Contact me!</a>
+            </div>
+
+        </main>
+
+        <footer class="footer" id="footer" role="footer">
+
+            <div class="footer-cards row p-4 pt-5">
+                <div class="social-media col-6 col-md-4">
+                    <ul class="p-0">
+                        <li>
+                            <h5 class="display-5">Follow Me</h5>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
-                        </li>
+                        <li><a href="https://www.linkedin.com/in/yali-liu-8164a0288/">Linkedin</a></li>
+                        <li><a href="https://twitter.com/yaliliu96">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/echo.628/">Instagram</a></li>
                     </ul>
-
                 </div>
-            </div>
-        </nav>
 
-    </header>
-
-    <main><!-- main area includes 4 sections: banner, bio, skills and works -->
-        <div class="banner" role="banner">
-            <img srcset="./assets/banners/about-banner-960_x_290.jpg 960w, ./assets/banners/home-banner-1500-1500_x_650.jpg 1500w"
-                sizes="(max-width: 720px) 720px,(max-width: 1080px) 1080px"
-                src="./assets/banners/home-banner-1500-1500_x_650.jpg" alt="home-banner-lg" id="home-banner-lg">
-            <div class="banner-content">
-                <h1 class="display-1 text-white">Hi,I'm Yali Liu</h1>
-                <a href="#"> <button role="button" class="main-button btn btn-lg text-white gradient-button mt-2"
-                        id="main-button">View my works</button></a>
-                <a href="#"> <button role="button" class="sub-button btn btn-lg btn-outline-secondary mt-2 px-4">Contact
-                        me!</button></a>
-            </div>
-        </div>
-
-        <section class="bio p-4 bg-light">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-4 bi0-content" data-aos="fade-right" data-aos-duration="1000">
-                    <h3 class="display-3">Hey! I'm Yali, a dedicated and creative UI/UX designer and Web developer based
-                        in Ottawa, ON.
-                    </h3>
-                    <a href="#">Learn more<i class="bi bi-arrow-right-short"></i></a>
+                <div class="links col-6 col-md-4">
+                    <ul class="p-0">
+                        <li>
+                            <h5 class="display-5">Links</h5>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
                 </div>
-                <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="3000"><img
-                        src="./assets/images/catgirl.png" alt="bio-comic"></div>
 
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <a class="btn btn-outline-primary btn-lg my-4" role="button" href="#">Download my CV</a>
+                </div>
+
+                <div class="line"></div>
+                <p class="text-center pt-1">Copyright ©2023 Yali Liu</p>
             </div>
 
+        </footer>
 
-        </section>
-
-        <section class="skills bg-primary-subtle">
-            <h2 class="display-2 text-center">Skills</h2>
-            <div class="skill-cards row pb-5">
-                <div class="skill-card col-6 col-lg-3">
-                    <img src="./assets/icons/skill1.svg" style="max-width: 50%;" alt="skill-1" data-aos="flip-left"
-                        data-aos-duration="400">
-                    <p>UI/UX Design</p>
-                </div>
-                <div class="skill-card col-6 col-lg-3">
-                    <img src="./assets/icons/skill2.svg" style="max-width: 50%;" alt="skill-2" data-aos="flip-left"
-                        data-aos-duration="600">
-                    <p>UI/UX Design</p>
-                </div>
-                <div class="skill-card col-6 col-lg-3">
-                    <img src="./assets/icons/skill3.svg" style="max-width: 50%;" alt="skill-3" data-aos="flip-left"
-                        data-aos-duration="800">
-                    <p>UI/UX Design</p>
-                </div>
-                <div class="skill-card col-6 col-lg-3">
-                    <img src="./assets/icons/skill4.svg" style="max-width: 50%;" alt="skill-4" data-aos="flip-left"
-                        data-aos-duration="1200">
-                    <p>UI/UX Design</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="works">
-            <h2 class="display-2 text-center">My Works</h2>
-            <div class="work-cards row g-4">
-                <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="600">
-                    <img src=" ./assets/images/chillax-800.jpg" class="card-img-top img-fluid" alt="icecreamshop">
-                    <div class="card-body">
-                        <h5 class="card-title display-5 pt-2">UI/UX DESIGN</h5>
-                        <h3 class="card-title display-4 pt-2">ICE CREAM WEB</h3>
-                        <p class="card-text">I designed the brand
-                            identities and website for a vertual ice cream shop.Our UX/UI design project
-                            is poised to revolutionize the ice cream
-                            experience, seamlessly blending delightful flavors with an intuitive digital interface. </p>
-                        <a href="#" class="link-underline-primary">Learn more<i class="bi bi-arrow-right-short"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="600">
-                    <img src=" ./assets/images/animal-800.png" class="card-img-top .img-fluid" alt="animalrescue">
-                    <div class="card-body">
-                        <h5 class="card-title display-5 pt-2">WORDPRESS</h5>
-                        <h3 class="card-title display-4 pt-2">ANIMAL RESCUE WEB</h3>
-                        <p class="card-text">This is a project I did in college.The platform was meticulously designed
-                            to provide a user-friendly interface, facilitating seamless navigation for visitors
-                            interested in adopting or supporting animals in need. </p>
-                        <a href="#" class="link-underline-primary">Learn more<i class="bi bi-arrow-right-short"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="600">
-                    <img src=" ./assets/images/illustration-800.png" class="card-img-top .img-fluid" alt="illustration">
-                    <div class="card-body">
-                        <h5 class="card-title display-5 pt-2">ILLUSTRATION</h5>
-                        <h3 class="card-title display-4 pt-2">APPLE AVATORS</h3>
-                        <p class="card-text">In my college illustration project, I undertook the creation of a visually
-                            captivating platform that showcased a meticulous design approach. The primary goal was to
-                            offer a user-friendly interface that not only captured attention.</p>
-                        <a href="#" class="link-underline-primary">Learn more<i class="bi bi-arrow-right-short"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="contact-button d-flex justify-content-center">
-            <a class="btn btn-outline-primary btn-lg mb-5" href="contact.html">Contact me!</a>
-        </div>
-
-    </main>
-
-    <footer class="footer">
-
-        <div class="footer-cards row p-4 pt-5">
-            <div class="social-media col-6 col-md-4">
-                <ul class="p-0">
-                    <li>
-                        <h5 class="display-5">Follow Me</h5>
-                    </li>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                </ul>
-            </div>
-
-            <div class="links col-6 col-md-4">
-                <ul class="p-0">
-                    <li>
-                        <h5 class="display-5">Links</h5>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-                <a class="btn btn-outline-primary btn-lg my-4" href="#">Download my CV</a>
-            </div>
-
-            <div class="line"></div>
-            <p class="text-center pt-1">Copyright ©2023 Yali Liu</p>
-        </div>
-
-    </footer>
+    </div>
+    <!-- end of the body container -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

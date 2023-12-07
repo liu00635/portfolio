@@ -49,13 +49,14 @@ h2 {
 /* customize the bootstrap*/
 
 :root {
-    --bs-primary: #DA76BC;
+    --bs-primary: #c2499e;
     --bs-secondary: #F9F8DC;
-    --bs-primary-rgb: 218, 118, 188;
+    --bs-primary-rgb: 196, 54, 153;
     --bs-secondary-rgb: 253, 255, 132;
     --bs-primary-text-emphasis: #773D66;
     --bs-secondary-text-emphasis: #FDFF84;
-    --bs-bg-primary: #DA76BC;
+    --bs-bg-primary: #c2499e;
+    --bs-primary-subtle: #DDB8D7;
     --bs-primary-bg-subtle: #DDB8D7;
     --bs-secondary-bg: #FDFF84;
     --bs-secondary-bg-subtle: rgb(249, 248, 220);
@@ -114,14 +115,10 @@ h2 {
 
 /* custimize the nav bar */
 .navbar[data-bs-theme="dark"] {
-    --bs-navbar-hover-color: var(--bs-primary);
-    --bs-navbar-active-color: var(--bs-primary);
+    --bs-navbar-hover-color: #DA76BC;
+    --bs-navbar-active-color: #DA76BC;
     --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
     --bs-navbar-brand-hover-color: var(--bs-primary);
-}
-
-#logo {
-    fill: #DA76BC;
 }
 
 
@@ -326,6 +323,23 @@ footer .social-media,
 
 #exampleFormControlTextarea1 {
     height: 10rem;
+}
+
+/* style the skip links - hidden defaultly and shows when focused */
+.skip-link {
+    position: absolute;
+    top: -50em;
+}
+
+.skip-link:focus {
+    left: auto;
+    right: 10px;
+    top: 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    z-index: 1;
 }
 
 
