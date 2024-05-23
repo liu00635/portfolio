@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/thd5hbd.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./css/main.css">
 
@@ -71,7 +72,7 @@
                 <!-- banner text content -->
                 <div class="banner-content">
                     <h1 class="display-1 text-white">Hi,I'm Yali Liu</h1>
-                    <a href="https://liu0062538dc.myportfolio.com/work"> <button role="button"
+                    <a href="#works"> <button role="button"
                             class="main-button btn btn-lg text-white gradient-button mt-2" id="main-button">View my
                             works</button></a>
                     <a href="./contact.html"> <button role="button"
@@ -84,7 +85,7 @@
             <section class="bio p-4 bg-light">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-md-4 bi0-content" data-aos="fade-right" data-aos-duration="1000">
-                        <h3 class="display-3">Hey! I'm Yali, a dedicated and creative UI/UX designer and Web developer
+                        <h3 class="display-4">Hey! I'm Yali, a dedicated and creative UI/UX designer and Web developer
                             based in Ottawa, ON.
                         </h3>
                         <a href="./about.html" class="hvr-float" role="button">Learn more<i
@@ -105,7 +106,7 @@
             </section>
 
             <!-- A skills section using grid system -->
-            <section class="skills bg-primary-subtle">
+            <!-- <section class="skills bg-primary-subtle">
                 <h2 class="display-2 text-center">Skills</h2>
                 <div class="skill-cards row pb-5">
                     <div class="skill-card col-6 col-lg-3">
@@ -129,89 +130,101 @@
                         <p>Web Development</p>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- A work section using grid system and schema to mark up my creative works -->
-            <section class="works" itemscope itemtype="https://schema.org/CreativeWork">
+            <section id="works" class="works" itemscope itemtype="https://schema.org/CreativeWork">
                 <h2 class="display-2 text-center">My Works</h2>
                 <div class="work-cards row g-4">
-                    <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="600">
+                    <div class="work-card col-12 col-md-6 bg-light" data-aos="fade-up" data-aos-duration="600">
                         <!-- work card image with 2 sizes -->
                         <picture>
-                            <source srcset="./assets/images/chillax-400.jpg 400w" media="(max-width: 720px)"
+                            <!-- <source srcset="./assets/images/chillax-400.jpg 400w" media="(max-width: 720px)"
                                 sizes="(max-width: 720px) 100vw">
                             <source srcset="./assets/images/chillax-800.jpg 800w" media="(min-width: 721px)"
-                                sizes="(min-width: 721px) 100vw">
-                            <img src="./assets/images/chillax-800.jpg" class="card-img-top img-fluid"
+                                sizes="(min-width: 721px) 100vw"> -->
+                            <img src="./assets/images/chillax.png" class="card-img-top img-fluid rounded-4"
                                 alt="icecreamshop">
                         </picture>
                         <!-- work card text content -->
                         <div class="card-body" itemprop="exampleOfWork">
-                            <h5 class="card-title display-5 pt-2" itemprop="keywords">UI/UX DESIGN, BRANDING</h5>
-                            <h3 class="card-title display-4 pt-2">ICE CREAM WEBSITE</h3>
-                            <p class="card-text">I designed the brand
-                                identities and website for a vertual ice cream shop. I designed a logo and brand
-                                identities using Illustrator, prototyped using Figma, and developed using HTML, CSS and
-                                JS.Our UX/UI design project
-                                is poised to revolutionize the ice cream
-                                experience, seamlessly blending delightful flavors with an intuitive digital interface.
+                            <h5 class="card-title display-5 pt-4" itemprop="keywords">UI/UX DESIGN, BRANDING, WEB
+                                DEVELOPMENT</h5>
+                            <h3 class="card-title display-4 pt-3">ICE CREAM WEBSITE</h3>
+                            <p class="card-text pt-3">Chillax is an ice cream shop dedicated to promoting a sense of
+                                well-being, relaxation, and enjoyment. This comprehensive project encompassed every
+                                stage of development, from initial research to logo creation, brand identity design,
+                                wireframing, prototyping, and coding to bring the vision to life.
                             </p>
-                            <a href="https://liu00635.github.io/mtm6201-midterm/"
-                                class="link-underline-primary hvr-float" role="button">Learn
+                            <a href="https://liu00625b862.myportfolio.com/chillax"
+                                class="link-underline-primary hvr-float pb-4" role="button">Learn
                                 more<i class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
 
 
-                    <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up"
-                        data-aos-duration="1000">
+                    <div class="work-card col-12 col-md-6 bg-light" data-aos="fade-up" data-aos-duration="1000">
                         <!-- work card image with 2 sizes -->
                         <picture>
-                            <source srcset="./assets/images/blogr-400.jpg 400w" media="(max-width: 720px)"
-                                sizes="(max-width: 720px) 100vw">
-                            <source srcset="./assets/images/blogr-800.jpg 800w" media="(min-width: 721px)"
-                                sizes="(min-width: 721px) 100vw">
-                            <img src="./assets/images/animal-800.png" class="card-img-top img-fluid" alt="blogrimage">
+                            <img src="./assets/images/blogr.png" class="card-img-top img-fluid rounded-4"
+                                alt="blogrimage">
                         </picture>
                         <!-- work card text content -->
                         <div class="card-body" itemprop="exampleOfWork">
-                            <h5 class="card-title display-5 pt-2" itemprop="keywords">WEB DEVELOPMENT</h5>
-                            <h3 class="card-title display-4 pt-2">BLOGR LANDING PAGE</h3>
-                            <p class="card-text">The objective of this personal project is to design and develop a
+                            <h5 class="card-title display-5 pt-4" itemprop="keywords">WEB DEVELOPMENT</h5>
+                            <h3 class="card-title display-4 pt-3">BLOGR LANDING PAGE</h3>
+                            <p class="card-text pt-3">The objective of this personal project is to design and develop a
                                 responsive blog website, titled "Blogr", using HTML, CSS, JavaScript, and Bootstrap. The
                                 primary goal is to create an intuitive and visually appealing platform, offering a
                                 user-friendly experience across various
                                 devices and screen sizes. </p>
                             <a href="https://liu00635.github.io/blog-landing-page/"
-                                class="link-underline-primary hvr-float" role="button">Learn more<i
+                                class="link-underline-primary hvr-float pb-4" role="button">Learn more<i
+                                    class="bi bi-arrow-right-short"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work-card col-12 col-md-6 bg-light" data-aos="fade-up" data-aos-duration="1000">
+                        <!-- work card image with 2 sizes -->
+                        <picture>
+                            <img src="./assets/images/personal_brand.png" class="card-img-top img-fluid rounded-4"
+                                alt="blogrimage">
+                        </picture>
+                        <!-- work card text content -->
+                        <div class="card-body" itemprop="exampleOfWork">
+                            <h5 class="card-title display-5 pt-4" itemprop="keywords">BRAND DESIGN, LOGO DESIGN, WEB
+                                DEVELOPMENT</h5>
+                            <h3 class="card-title display-4 pt-2">PERSONAL BRANDING</h3>
+                            <p class="card-text pt-2">This is my personal branding and website design project. I went
+                                through the entire design process, choosing colors, fonts, creating logos, mood boards,
+                                brand identities, and designing and building the website. I used Illustrator, Figma for
+                                designing, and utilized Bootstrap, HTML, and CSS to make it work. </p>
+                            <a href="https://liu00625b862.myportfolio.com/personal-branding"
+                                class="link-underline-primary hvr-float pb-4" role="button">Learn more<i
                                     class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
 
 
-                    <div class="work-card col-12 col-md-6 col-lg-4 bg-light" data-aos="fade-up" data-aos-duration="1400"
+                    <div class="work-card col-12 col-md-6 bg-light" data-aos="fade-up" data-aos-duration="1400"
                         itemprop="exampleOfWork">
                         <!-- work card image with 2 sizes -->
                         <picture>
-                            <source srcset="./assets/images/illustration-400.png 400w" media="(max-width: 720px)"
-                                sizes="(max-width: 720px) 100vw">
-                            <source srcset="./assets/images/illustration-800.png 800w" media="(min-width: 721px)"
-                                sizes="(min-width: 721px) 100vw">
-                            <img src="./assets/images/illustration-800.png" class="card-img-top img-fluid"
+                            <img src="./assets/images/avators.png" class="card-img-top img-fluid rounded-4"
                                 alt="illustration">
                         </picture>
                         <!-- work card text content -->
                         <div class="card-body">
-                            <h5 class="card-title display-5 pt-2" itemprop="keywords">ILLUSTRATION</h5>
+                            <h5 class="card-title display-5 pt-4" itemprop="keywords">ILLUSTRATION</h5>
                             <h3 class="card-title display-4 pt-2">APPLE AVATORS</h3>
-                            <p class="card-text">In my college illustration project, I undertook the creation of a
+                            <p class="card-text pt-2">In my college illustration project, I undertook the creation of a
                                 visually
                                 captivating platform that showcased a meticulous design approach. The primary goal was
                                 to
                                 offer a user-friendly interface that not only captured attention. I used Illustrator to
                                 create three avators on different screen sizes.</p>
-                            <a href="https://liu0062538dc.myportfolio.com/apple-avators"
-                                class="link-underline-primary hvr-float" role="button">Learn more<i
+                            <a href="https://liu00625b862.myportfolio.com/apple-avators"
+                                class="link-underline-primary hvr-float pb-4" role="button">Learn more<i
                                     class="bi bi-arrow-right-short"></i></a>
                         </div>
                     </div>
