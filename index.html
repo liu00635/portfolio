@@ -33,9 +33,10 @@
         </div>
 
         <header> <!-- header section includes navigation bar -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" role="navigation" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom" role="navigation" data-bs-theme="dark">
                 <div class="container-fluid navbar-container">
-                    <a class="navbar-brand" href="index.html"><img src="./assets/icons/logo.svg" alt="main-logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="./assets/icons/logo.svg" alt="main-logo"
+                            style="width: 60px"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -49,9 +50,9 @@
                             <li class="nav-item">
                                 <a class="nav-link hvr-float" href="about.html">ABOUT</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link hvr-float" href="contact.html">CONTACT</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -62,22 +63,19 @@
         <main id="main-content"><!-- main area includes 4 sections: banner, bio, skills and works -->
             <div class="banner" role="banner">
                 <!-- this is banner image with 2 different sizes -->
-                <picture>
-                    <source srcset="./assets/banners/home-banner-1500-960_x_416.jpg 960w" media="(max-width: 720px)"
-                        sizes="(max-width: 720px) 100vw">
-                    <source srcset="./assets/banners/home-banner-1500-1500_x_650.jpg 1500w" media="(min-width: 721px)"
-                        sizes="(min-width: 721px) 100vw">
-                    <img src="./assets/banners/home-banner-1500-1500_x_650.jpg" alt="home-banner">
-                </picture>
+                <!-- <img src="./assets/banners/home-banner-1500-1500_x_650.jpg" alt="home-banner"> -->
+                <img src="./assets/banners/home-banner1-desktop.png" alt="home-banner">
                 <!-- banner text content -->
                 <div class="banner-content">
                     <h1 class="display-1 text-white">Hi, I'm Yali Liu</h1>
-                    <a href="#works"> <button role="button"
-                            class="main-button btn btn-lg text-white gradient-button mt-2" id="main-button">View my
-                            works</button></a>
-                    <a href="./contact.html"> <button role="button"
-                            class="sub-button btn btn-lg btn-outline-secondary mt-2 px-4">Contact
-                            me!</button></a>
+                    <div class="button-group">
+                        <a href="#works"> <button role="button"
+                                class="main-button btn btn-lg text-white gradient-button mt-2" id="main-button">View my
+                                works</button></a>
+                        <a href="./contact.html"> <button role="button"
+                                class="sub-button btn btn-lg btn-outline-secondary mt-2 px-4">Contact
+                                me!</button></a>
+                    </div>
                 </div>
             </div>
 
@@ -91,15 +89,10 @@
                         <a href="./about.html" class="hvr-float" role="button">Learn more<i
                                 class="bi bi-arrow-right-short"></i></a>
                     </div>
-                    <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="col-12 col-md-6 center-image" data-aos="zoom-in" data-aos-duration="3000">
                         <!-- bio image with 2 sizes -->
-                        <picture>
-                            <source srcset="./assets/images/catgirl-600_x_474.png 600w" media="(max-width: 720px)"
-                                sizes="(max-width: 720px) 100vw">
-                            <source srcset="./assets/images/catgirl-800_x_632.png 800w" media="(min-width: 721px)"
-                                sizes="(min-width: 721px) 100vw">
-                            <img src="./assets/images/catgirl-800_x_632.png" alt="bio-comic">
-                        </picture>
+                        <img src="./assets/images/catgirl-800_x_632.png" alt="bio-comic" style="width:800px">
+
                     </div>
 
                 </div>
@@ -137,15 +130,8 @@
                 <h2 class="display-2 text-center">My Works</h2>
                 <div class="work-cards row g-4">
                     <div class="work-card col-12 col-md-6 bg-light" data-aos="fade-up" data-aos-duration="600">
-                        <!-- work card image with 2 sizes -->
-                        <picture>
-                            <!-- <source srcset="./assets/images/chillax-400.jpg 400w" media="(max-width: 720px)"
-                                sizes="(max-width: 720px) 100vw">
-                            <source srcset="./assets/images/chillax-800.jpg 800w" media="(min-width: 721px)"
-                                sizes="(min-width: 721px) 100vw"> -->
-                            <img src="./assets/images/chillax.png" class="card-img-top img-fluid rounded-4"
-                                alt="icecreamshop">
-                        </picture>
+                        <img src="./assets/images/chillax.png" class="card-img-top img-fluid rounded-4"
+                            alt="icecreamshop">
                         <!-- work card text content -->
                         <div class="card-body" itemprop="exampleOfWork">
                             <h5 class="card-title display-5 pt-4" itemprop="keywords">UI/UX DESIGN, BRANDING, WEB
