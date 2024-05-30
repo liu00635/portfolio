@@ -480,4 +480,7 @@ footer .social-media,
         width: 40px !important;
     }
 
+    .catgif {
+        display: none;
+    }
 }
