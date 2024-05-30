@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-family: "Cinzel Decorative", sans-serif;
+    font-family: "all-round-gothic", sans-serif;
     font-style: normal;
 }
 
@@ -297,6 +297,12 @@ footer .social-media,
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 1rem;
+}
+
+.skill-card p {
+    color: rgb(130, 130, 130);
+    padding-top: 1rem;
 }
 
 .skills,
@@ -310,12 +316,15 @@ footer .social-media,
     border-radius: 15px;
 }
 
+.catgif {
+    position: absolute;
+}
 
 
 /* about page starts here */
 /* style the about banner area */
 .about-banner {
-    background-image: url(../assets/banners/home-banner1-desktop.png);
+    background-image: url(../assets/banners/piexl-city.jpg);
     height: 400px;
     display: flex;
     justify-content: center;
@@ -330,10 +339,9 @@ footer .social-media,
     padding: 5% 10%;
 }
 
-.about-content picture img {
-    width: 100%;
-    height: auto;
-    max-height: 700px;
+#facegif {
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     object-fit: contain;
 }
@@ -353,6 +361,7 @@ footer .social-media,
 
 .funfact {
     position: relative;
+    padding-bottom: 2rem;
 }
 
 .funfact h5 {
