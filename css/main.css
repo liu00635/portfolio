@@ -348,10 +348,9 @@ footer .social-media,
 
 .about-content p {
     padding-right: 5%;
-    color: whitesmoke;
-    font-size: 1.2rem;
+    color: rgb(112, 112, 112);
+    font-size: 1.1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(113, 113, 113);
 }
 
 /* style the fun facts section */
